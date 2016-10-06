@@ -1,0 +1,148 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: #898989;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body, html{height: 100%}
+#wrap {min-height: 100%;overflow:hidden;}
+/* FIM RESET */
+
+/* Topo Início */
+
+header{width: 100%; display: block; background-color: #eeeeee; border-bottom: #c9c9c9 1px solid; height: 55px;}
+#logo{background-color: #FFF;box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.20);}
+#logo img{height: 75px; padding: 10px 0 10px 10px;}
+#menu{padding: 10px 0;}
+#menu nav ul li {padding: 10px 0;text-align: center; font-weight:500; font-size: 16px}
+#menu nav ul li:nth-child(1), #menu nav ul li:nth-child(2){border-right: 1px solid #c9c9c9}
+#menu #btnAcesso{float: right; padding: 4px 0}
+#menu #btnAcesso a{color: #fff; font-size: 16px; background-color: #f7941e; padding: 5px 0;text-align: center; font-weight: bold;border-radius: 5px; float: right}
+#menu #btnAcesso a i{color: #FFF}
+#menu #breadcrumbs{padding: 16px}
+#menu #breadcrumbs li{ display: inline-block; font-size: 12px}
+/* Topo Fim */
+
+/*Destaques Inicio*/
+#destaque{ display: block}
+#banner li,#bannerConteudo li{  padding: 40px 0 40px 0; max-width: 960px; width: 100%; height: auto;}
+#banner li:first-child img,#bannerConteudo li:first-child img{ display: block;}
+#banner li img, #bannerConteudo li img{max-width: 960px; width: 100%; height: auto; display: none;}
+#banner li img.show, #bannerConteudo li img.show{ display: block !important;}
+#banner .paginas{position: absolute; z-index: 99999; float: left; min-width: 9%; width: 100%; padding: 5px 0; left: 0; text-align: center; bottom:0}
+#banner .paginas a {background: #898989; border: #898989 2px solid;text-indent: -9999px;display: inline-block;width: 10px;height: 10px;margin: 0 5px;outline: 0;color: rgba(255,255,255,0);-webkit-transition:    all 0.2s linear;    -moz-transition: all 0.2s linear;   -o-transition: all 0.2s linear; transition: all 0.2s linear;}
+#banner .paginas a:hover {background: #20b7ce; border: #20b7ce 2px solid;text-indent: -9999px;display: inline-block;width: 10px;height: 10px;margin: 0 5px;outline: 0;color: rgba(255,255,255,0);-webkit-transition:    all 0.2s linear;    -moz-transition: all 0.2s linear;   -o-transition: all 0.2s linear; transition: all 0.2s linear;}
+#banner .paginas a.activeSlide {background: #20b7ce!important; border: #20b7ce 2px solid;text-indent: -9999px;display: inline-block;width: 10px;height: 10px;margin: 0 5px;outline: 0;color: rgba(255,255,255,0);-webkit-transition:  all 0.2s linear;-moz-transition: all 0.2s linear;   -o-transition: all 0.2s linear; transition: all 0.2s linear;}
+#imgDestaque{float: right; padding: 40px 0 40px 0;}
+#imgDestaque img{border:3px solid #ec007a; width: 100%; height: 310px }
+
+/*Destaques Fim*/
+
+/*Conteúdo Inicio*/
+
+section sidebar{border:1px solid #c9c9c9; padding: 0; float: left!important; margin-right: 0!important;}
+section sidebar div{padding: 16px 5px;}
+section sidebar p{color:#f7941e; font-size: 16px; padding-bottom: 10px}
+section sidebar hr{border-color: #c9c9c9}
+section sidebar .subTitle{padding-top: 20px;}
+section sidebar .subTitle p,section sidebar .subTitle a{ font-size: 14px; font-weight: bold; color:#20b7ce}
+section sidebar .subTitle p i,section sidebar .subTitle a i{color:#f7941e}
+section sidebar .subTitle .item{ padding-top: 10px}
+section sidebar .subTitle .item a{font-weight: normal; color:#898989;}
+
+section article #txtArtigo h1, section article #imgArtigo h1{font-weight: 300; font-size: 20px;color:#ec007a}
+section article #txtArtigo hr, section article #imgArtigo hr{margin:20px 0}
+section article #txtArtigo p{font-weight: 400; font-size: 16px;}
+section article #imgArtigo{left:22px}
+section article #imgArtigo img{width: 100%; height: auto; border-radius: 10px;}
+section div ul li.boxArtigo {display: inline-block; border:1px solid #f7941e; text-align: center; width: 220px ; height: 160px; margin-top: 0; margin-bottom: 80px}
+section div ul li.boxArtigo:nth-child(2) {margin:0 60px}
+section div ul li.boxArtigo i{font-size: 50px;color:#ec007a; margin:16px 0}
+section div ul li.boxArtigo:nth-child(3) i{font-size: 33px;color:#ec007a; margin:16px 0; border: 2px solid #ec007a;padding: 8px 12px;border-radius: 50%;}
+section div ul li.boxArtigo p{ padding-bottom:16px}
+/*Conteúdo Fim*/
+
+/*Rodape Inicio*/
+footer{width: 100%; background-color: #eeeeee;position: relative;margin-top: -415px;height: 415px;clear:both;}
+footer #leftMenu #firstMenu h1{font-size: 20px; font-weight: 400; margin-top: 40px; margin-bottom: 20px}
+footer #leftMenu #firstMenu sidebar nav ul{-moz-column-count: 2; column-count: 2; max-height: 130px;margin-bottom: 40px;}
+footer #leftMenu #firstMenu sidebar p.subTitleMenu{font-weight: 600; font-size: 16px; margin-bottom: 20px}
+footer #leftMenu #firstMenu sidebar .subItemMenu{font-weight: 400!important; font-size: 13px; padding-top: 10px}
+footer #leftMenu #firstMenu sidebar nav .geralLink{font-size: 13px; font-weight: 600; text-decoration: underline;}
+
+footer #leftMenu #secondMenu{margin-top:80px}
+footer #leftMenu #secondMenu sidebar nav ul{ max-height: 130px;margin-bottom: 40px;}
+footer #leftMenu #secondMenu sidebar p.subTitleMenu{font-weight: 600; font-size: 16px; margin-bottom: 20px}
+footer #leftMenu #secondMenu sidebar .subItemMenu{font-weight: 400!important; font-size: 13px; padding-top: 10px}
+footer #leftMenu #secondMenu sidebar nav .geralLink{font-size: 13px; font-weight: 600; text-decoration: underline;}
+
+footer #logos h1{font-size: 20px; font-weight: 400; margin-top: 40px; margin-bottom: 30px}
+footer #logos ul li.lineLogos:nth-child(2){margin:20px 0;}
+footer #logos ul li ul li{display: inline-block; margin-right: 50px;vertical-align: top; text-align: left}
+
+footer #footerHr{margin: 30px 0;}
+
+footer #bottomMenu #leftBottom, footer #bottomMenu #rightBottom{margin-bottom: 30px}
+footer #bottomMenu #leftBottom ul li, footer #bottomMenu #rightBottom ul li{display: inline-block; text-align: center}
+footer #bottomMenu #leftBottom ul li:nth-child(2){border-left: 1px solid #c9c9c9}
+footer #bottomMenu #rightBottom ul li:nth-child(2){border-left: 1px solid #c9c9c9; border-right: 1px solid #c9c9c9}
+
+#copyright{background-color: #c9c9c9;height: 145px; width: 100%!important; margin: 0!important; }
+#copyright div p{margin-top: 30px;text-align: center}
+/*Rodape Fim*/
+
+
+
+
+/* Cadastro de Usuario */
+#cadUsuario h1{font-size: 28px; font-weight: 700; margin-top: 15px}
+#cadUsuario form{margin-top: 40px; border: 2px solid #c9c9c9}
+#cadUsuario form ul li input[type='text'],#cadUsuario form ul li input[type='email']{width: 90%; margin: 1% 5%; border: 1px solid #c9c9c9; padding: 5px}
+#cadUsuario form ul li input[type='submit']{float: right; background-color: rgb(23,162,34); border:none; border-radius: 4px; padding: 5px 10px; margin-right: 3.5%; color: #FFF; margin-bottom: 1% }
+#cadUsuario .error {color:rgb(206,0,0);width: 90%; margin: 1% 5%;padding: 5px}
+#cadUsuario .error i{color:rgb(206,0,0); padding-right: 15px}
+
+#listaUsuario{margin-top:20px}
+#listaUsuario ul li p{font-size:16px; font-weight: 600}
+#listaUsuario ul li span{font-size: 13px}
